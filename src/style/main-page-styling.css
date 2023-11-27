@@ -1,0 +1,25 @@
+.container{
+    display: inline-block;
+}
+.typing-animation{
+    font-size: 3em;
+    letter-spacing: 0vw;
+    font-family: monospace;
+    border-right: 5px solid;
+    width:100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:typing 8s steps(71),
+    cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50%{
+        border-color: transparent transparent;
+    }}
+
+    @keyframes typing{
+        from{width:0}
+    }
+    
+
