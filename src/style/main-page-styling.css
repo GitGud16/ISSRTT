@@ -1,6 +1,25 @@
 .container{
     display: inline-block;
 }
+.slider-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.slider{
+    /* height: 5vh; */
+    margin-top: 5px;
+    margin-left: 15px;
+    width: 95vw;
+    border: red solid 3px;
+}
+.button{
+    background: #666666;
+    width: 3%;
+    height: 2vh;
+    /* border: #121212 solid 1px; */
+}
 .typing-animation{
     font-size: 3em;
     letter-spacing: 0vw;
