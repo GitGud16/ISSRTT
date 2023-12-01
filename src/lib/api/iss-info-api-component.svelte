@@ -53,6 +53,7 @@
     <div id="map" style="height: 500px;"></div>
 
     <div class="slider-container">
+        
         <input on:change={onSliderChange} class="slider" type="range" min="0" max="100" bind:value={sliderValue}>
         <button class="button" on:click={onResetButtonClick}>reset</button>
     </div>
