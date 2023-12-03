@@ -11,7 +11,6 @@
 
 
 
-
 <style>
     @import "../style/main-page-styling.css";
    
