@@ -1,15 +1,9 @@
 name = "iss-location-project"
-type = "javascript"
-account_id = "your-account-id"
-workers_dev = true
-route = ""
-zone_id = ""
-usage_model = "bundled"
-compatibility_date = "2023-05-18"
 
 [site]
-bucket = "./build"
+bucket = "./.svelte-kit/cloudflare"
 entry-point = "."
+pages_build_output_dir = ".svelte-kit/cloudflare"
 
 [build]
-command = "npm run build"
+command = "pnpm run build"
