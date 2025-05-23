@@ -268,7 +268,6 @@
         if (predictionMarker) {
             predictionMarker.setLatLng([lat, lon]);
         } else {
-            // Create a custom icon for the prediction marker
             const predictionIcon = leaflet.divIcon({
                 html: '<div class="prediction-icon">📍</div>',
                 className: 'prediction-marker',
@@ -278,7 +277,7 @@
             
             predictionMarker = leaflet.marker([lat, lon], {
                 icon: predictionIcon,
-                zIndexOffset: 1000 // Ensure it appears above the ISS marker
+                zIndexOffset: 1000
             }).addTo(map).bindPopup('Predicted ISS Location');
         }
     }
@@ -439,12 +438,12 @@
         position: relative;
         width: 100%;
         margin-bottom: 10px;
-        min-height: 300px; /* Ensure minimum height */
+        min-height: 300px; 
     }
     
     #map {
         width: 100%;
-        height: 60vh; /* Fallback if JS doesn't set height */
+        height: 60vh; 
         min-height: 300px;
         border-radius: 8px;
         overflow: hidden;
